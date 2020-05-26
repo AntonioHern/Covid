@@ -312,8 +312,8 @@ demo = {
                 backgroundColor: '#f5f5f5',
                 titleFontColor: '#333',
                 bodyFontColor: '#666',
-                bodySpacing: 2,
-                xPadding: 8,
+                bodySpacing: 12,
+                xPadding: 15,
                 mode: "nearest",
                 intersect: 0,
                 position: "nearest"
@@ -328,9 +328,9 @@ demo = {
                         zeroLineColor: "transparent",
                     },
                     ticks: {
-                        suggestedMin: 10,
+                        suggestedMin: 20,
                         suggestedMax: 120,
-                        padding: 5,
+                        padding: 15,
                         fontColor: "#9e9e9e"
                     }
                 }],
@@ -343,7 +343,7 @@ demo = {
                         zeroLineColor: "transparent",
                     },
                     ticks: {
-                        padding: 5,
+                        padding: 15,
                         fontColor: "#9e9e9e"
                     }
                 }]
@@ -430,7 +430,7 @@ demo = {
         //console.log(comunidades[0]['name']);
 
             //bucle para sacar todos los nombres de las comunidades
-            var labels=['CLM','CAN','ESK','CYL','EXT','NAV','CANT','AST','ARG','VLC','MUR','CEU','BAL','CAT','AND','RIO','MAD','GAL','MEL']
+            var labels=['CLM','CANT','ESK','CYL','EXT','NAV','CAN','AST','ARG','VLC','MUR','CEU','BAL','CAT','AND','RIO','MAD','GAL','MEL']
 
 
             //bucle para sacar todos los datos activos de cada comunidad
