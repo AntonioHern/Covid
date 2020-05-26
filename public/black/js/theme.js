@@ -428,8 +428,9 @@ demo = {
 
 
         /*  CONTIAGADOS*/
+        var fecha = moment().format("YYYY-MM-DD");
 
-        $.get("https://api.covid19tracking.narrativa.com/api/2020-05-26/country/spain", function (data2) {
+        $.get("https://api.covid19tracking.narrativa.com/api/"+fecha+"/country/spain", function (data2) {
 
         var comunidades =data2['dates']['2020-05-26']['countries']['Spain']['regions'];
         //console.log(comunidades[0]['name']);
@@ -451,7 +452,8 @@ demo = {
             total_nuevos_contagios.forEach(function (totalNuevos) {
                 sumaNuevosContagios+=totalNuevos
             })
-            $('#total_nuevos').html('<i class="tim-icons icon-bell-55 text-warning"></i>'+sumaNuevosContagios)
+            $('#total_nuevos').html('<i class="tim-icons icon-bell-55 text-warning"></i>'+sumaNuevosContagios);
+            $('.fecha').text(fecha);
 
 
         var ctxCentral = document.getElementById("chartBig1").getContext("2d");

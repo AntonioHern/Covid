@@ -8,6 +8,7 @@
                     <div class="row">
                         <div class="col-sm-6 text-left">
                             <h5 class="card-category">Total Nuevos Contagios España</h5>
+                            <h5 class="card-category fecha"></h5>
                             <h2 class="card-title" id="total_nuevos"><i class="tim-icons icon-bell-55 text-warning"></i></h2>
                         </div>
 
@@ -26,6 +27,7 @@
             <div class="card card-chart">
                 <div class="card-header">
                     <h5 class="card-category">Total Contagios</h5>
+                    <h5 class="card-category fecha"></h5>
                     <h3 class="card-title" id="total_casos"><i class="tim-icons icon-bell-55 text-primary"></i></h3>
                 </div>
                 <div class="card-body">
@@ -39,6 +41,7 @@
             <div class="card card-chart">
                 <div class="card-header">
                     <h5 class="card-category">Total Muertes</h5>
+                    <h5 class="card-category fecha"></h5>
                     <h3 class="card-title" id="total_muertes"><i class="tim-icons icon-paper text-info"></i></h3>
                 </div>
                 <div class="card-body">
@@ -52,6 +55,7 @@
             <div class="card card-chart">
                 <div class="card-header">
                     <h5 class="card-category">Total Recuperados</h5>
+                    <h5 class="card-category fecha"></h5>
                     <h3 class="card-title" id="total_recuperados"><i class="tim-icons icon-send text-success"></i></h3>
                 </div>
                 <div class="card-body">
