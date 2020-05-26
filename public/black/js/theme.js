@@ -430,7 +430,7 @@ demo = {
         //console.log(comunidades[0]['name']);
 
             //bucle para sacar todos los nombres de las comunidades
-            var labels=['CCM','CAN','ESK','CCL','EXT','NAV','CAN','AST','ARG','VLC','MUR','CEU','BLR','CAT','AND','RIO','MAD','GLC','MEL']
+            var labels=['CLM','CAN','ESK','CYL','EXT','NAV','CANT','AST','ARG','VLC','MUR','CEU','BAL','CAT','AND','RIO','MAD','GAL','MEL']
 
 
             //bucle para sacar todos los datos activos de cada comunidad
