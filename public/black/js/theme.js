@@ -421,12 +421,6 @@ demo = {
             options: gradientBarChartConfiguration
         });
 
-
-
-
-
-
-
         /*  CONTIAGADOS*/
         var fecha = moment().format("YYYY-MM-DD");
 
