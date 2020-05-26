@@ -330,7 +330,7 @@ demo = {
                     ticks: {
                         suggestedMin: 10,
                         suggestedMax: 120,
-                        padding: 2,
+                        padding: 5,
                         fontColor: "#9e9e9e"
                     }
                 }],
@@ -430,10 +430,8 @@ demo = {
         //console.log(comunidades[0]['name']);
 
             //bucle para sacar todos los nombres de las comunidades
-            var labels=[]
-            for (var i = 0; i <comunidades.length ; i++) {
-                labels[i]=comunidades[i]['name'];
-            }
+            var labels=['CCM','CAN','ESK','CCL','EXT','NAV','CAN','AST','ARG','VLC','MUR','CEU','BLR','CAT','AND','RIO','MAD','GLC','MEL']
+
 
             //bucle para sacar todos los datos activos de cada comunidad
             var datos=[]
