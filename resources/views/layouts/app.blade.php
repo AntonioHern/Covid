@@ -7,7 +7,7 @@
 
         <meta name="csrf-token" content="{{ csrf_token() }}">
 
-        <title>{{ config('app.name', 'Black Dashboard') }}</title>
+        <title>{{ config('app.name', 'MyCovid19') }}</title>
 
         <!-- Favicon -->
         <link rel="apple-touch-icon" sizes="76x76" href="{{ asset('favicon_package_v0.16/apple-touch-icon.png') }}">
