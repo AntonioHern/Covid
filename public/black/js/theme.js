@@ -406,7 +406,7 @@ demo = {
             },
             data: {
                 labels: [data[4]['country'],data[1]['country'], data[8]['country'],data[5]['country'], data[7]['country'], data[2]['country']],                    datasets: [{
-                    label: "contagios",
+                    label: "Recuperados",
                     fill: true,
                     backgroundColor: gradientStrokeGreen,
                     borderColor: '#2dce89',
