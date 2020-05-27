@@ -424,19 +424,19 @@ demo = {
         /*  CONTIAGADOS*/
         var fecha = moment().format("YYYY-MM-DD");
 
-        $.get("https://api.covid19tracking.narrativa.com/api/"+fecha+"/country/spain", function (data2) {
+        $.get("https://covid19.secuoyas.io/api/v1/es/ccaa?ultimodia=true", function (data2) {
 
-        var comunidades =data2['dates'][fecha]['countries']['Spain']['regions'];
-        //console.log(comunidades[0]['name']);
+        var casos=data2['timeline'][0]['regiones'];
 
             //bucle para sacar todos los nombres de las comunidades
-            var labels=['CLM','CANT','ESK','CYL','EXT','NAV','CAN','AST','ARG','VLC','MUR','CEU','BAL','CAT','AND','RIO','MAD','GAL','MEL']
+            var labels=['AND','ARG','AST','BAL','CAN','CANT','CYM','CYL','CAT','CEU','VAL','EXT','GAL','MAD','MEL','MUR','NAV','PVA','LRJ'];
 
 
-            //bucle para sacar todos los datos activos de cada comunidad
+
+          //bucle para sacar todos los datos activos de cada comunidad
             var datos=[]
-            for (var i = 0; i <comunidades.length ; i++) {
-                datos[i]=comunidades[i]['today_new_confirmed'];
+            for (var j = 0; j <casos.length ; j++) {
+                datos[j]=casos[j]['data']['casosConfirmadosDiario'];
             }
 
             total_nuevos_contagios=datos;
