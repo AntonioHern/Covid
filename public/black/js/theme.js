@@ -426,7 +426,7 @@ demo = {
 
         $.get("https://api.covid19tracking.narrativa.com/api/"+fecha+"/country/spain", function (data2) {
 
-        var comunidades =data2['dates']['2020-05-26']['countries']['Spain']['regions'];
+        var comunidades =data2['dates'][fecha]['countries']['Spain']['regions'];
         //console.log(comunidades[0]['name']);
 
             //bucle para sacar todos los nombres de las comunidades
