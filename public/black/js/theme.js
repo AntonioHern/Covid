@@ -235,7 +235,7 @@ demo = {
                         suggestedMax: 110,
                         padding: 20,
                         fontColor: "#ff8a76"
-                    }
+                    },
                 }],
 
                 xAxes: [{
@@ -345,7 +345,7 @@ demo = {
                     ticks: {
                         padding: 15,
                         fontColor: "#9e9e9e"
-                    }
+                    },
                 }]
             }
         };
@@ -422,7 +422,8 @@ demo = {
         });
 
         /*  CONTIAGADOS*/
-        var fecha = moment().format("YYYY-MM-DD");
+       // var fec = moment().format("YYYY-MM-DD");
+        var fecha=moment().subtract(1,'d').format("YYYY-MM-DD");
 
         $.get("https://covid19.secuoyas.io/api/v1/es/ccaa?ultimodia=true", function (data2) {
 
