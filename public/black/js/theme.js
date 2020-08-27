@@ -386,7 +386,7 @@ demo = {
                 options: gradientBarChartConfiguration
             });
 
-        var total_recuperados=[data[9]['recovered'],data[13]['recovered'],data[17]['recovered'],data[19]['recovered'],data[20]['recovered'],data[1]['recovered']];
+        var total_recuperados = [data[9]['recovered'], data[13]['recovered'], data[17]['recovered'], data[19]['recovered'], data[20]['recovered'], data[1]['recovered']];
         var sumaRecuperados =0;
         total_recuperados.forEach(function (total) {
             sumaRecuperados+=total;
