@@ -351,7 +351,7 @@ demo = {
         };
 
 
-            var total_casos=[data[4]['cases'],data[1]['cases'],data[8]['cases'],data[5]['cases'],data[7]['cases'],data[2]['cases']];
+            var total_casos=[data[9]['cases'],data[13]['cases'],data[17]['cases'],data[19]['cases'],data[20]['cases'],data[1]['cases']];
             var sumaCasos =0;
             total_casos.forEach(function (total) {
                 sumaCasos+=total;
@@ -370,7 +370,7 @@ demo = {
                     display: false
                 },
                 data: {
-                    labels: [data[4]['country'],data[1]['country'], data[8]['country'],data[5]['country'], data[7]['country'], data[2]['country']],                    datasets: [{
+                    labels: [data[9]['country'],data[13]['country'], data[17]['country'],data[19]['country'], data[20]['country'], data[1]['country']],                    datasets: [{
                         label: "contagios",
                         fill: true,
                         backgroundColor: gradientStrokePurple,
@@ -378,7 +378,7 @@ demo = {
                         borderWidth: 2,
                         borderDash: [],
                         borderDashOffset: 0.0,
-                        data: [data[4]['cases'],data[1]['cases'],data[8]['cases'],data[5]['cases'],data[7]['cases'],data[2]['cases']],
+                        data: [data[9]['cases'],data[13]['cases'],data[17]['cases'],data[19]['cases'],data[20]['cases'],data[1]['cases']],
 
 
                     }]
@@ -386,7 +386,7 @@ demo = {
                 options: gradientBarChartConfiguration
             });
 
-        var total_recuperados=[data[4]['recovered'],data[1]['recovered'],data[8]['recovered'],data[5]['recovered'],data[7]['recovered'],data[2]['recovered']];
+        var total_recuperados=[data[9]['recovered'],data[13]['recovered'],data[17]['recovered'],data[19]['recovered'],data[20]['recovered'],data[1]['recovered']];
         var sumaRecuperados =0;
         total_recuperados.forEach(function (total) {
             sumaRecuperados+=total;
@@ -405,7 +405,7 @@ demo = {
                 display: false
             },
             data: {
-                labels: [data[4]['country'],data[1]['country'], data[8]['country'],data[5]['country'], data[7]['country'], data[2]['country']],                    datasets: [{
+                    labels: [data[9]['country'],data[13]['country'], data[17]['country'],data[19]['country'], data[20]['country'], data[1]['country']],                    datasets: [{
                     label: "Recuperados",
                     fill: true,
                     backgroundColor: gradientStrokeGreen,
@@ -413,7 +413,7 @@ demo = {
                     borderWidth: 2,
                     borderDash: [],
                     borderDashOffset: 0.0,
-                    data: [data[4]['recovered'],data[1]['recovered'],data[8]['recovered'],data[5]['recovered'],data[7]['recovered'],data[2]['recovered']],
+                    data: [data[9]['recovered'],data[13]['recovered'],data[17]['recovered'],data[19]['recovered'],data[20]['recovered'],data[1]['recovered']],
 
 
                 }]
@@ -422,7 +422,7 @@ demo = {
         });
 
         /*  CONTIAGADOS*/
-       // var fec = moment().format("YYYY-MM-DD");
+       // fecha pero con un dia menos
         var fecha=moment().subtract(1,'d').format("YYYY-MM-DD");
 
         $.get("https://covid19.secuoyas.io/api/v1/es/ccaa?ultimodia=true", function (data2) {
@@ -484,20 +484,9 @@ demo = {
 
 
 
-
-
-
-
-
-
-
-
-
-
-
                /* MUERTES TOTALES POR PAISES*/
 
-        var total_muertos=[data[4]['deaths'],data[1]['deaths'],data[8]['deaths'],data[5]['deaths'],data[7]['deaths'],data[2]['deaths']];
+        var total_muertos=[data[9]['deaths'],data[13]['deaths'],data[17]['deaths'],data[19]['deaths'],data[20]['deaths'],data[1]['deaths']];
         var suma =0;
         total_muertos.forEach(function (total) {
             suma+=total;
@@ -518,7 +507,7 @@ demo = {
                     display: false
                 },
                 data: {
-                    labels: [data[4]['country'],data[1]['country'], data[8]['country'],data[5]['country'], data[7]['country'], data[2]['country']],
+                    labels: [data[9]['country'],data[13]['country'], data[17]['country'],data[19]['country'], data[20]['country'], data[1]['country']],
                     datasets: [{
                         label: "Muertos",
                         fill: true,
@@ -527,7 +516,7 @@ demo = {
                         borderWidth: 2,
                         borderDash: [],
                         borderDashOffset: 0.0,
-                        data: [data[4]['deaths'],data[1]['deaths'],data[8]['deaths'],data[5]['deaths'],data[7]['deaths'],data[2]['deaths']],
+                        data: [data[9]['deaths'],data[13]['deaths'],data[17]['deaths'],data[19]['deaths'],data[20]['deaths'],data[1]['deaths']],
                     }]
                 },
                 options: gradientBarChartConfiguration
