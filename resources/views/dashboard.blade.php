@@ -7,7 +7,7 @@
                 <div class="card-header ">
                     <div class="row">
                         <div class="col-sm-6 text-left">
-                            <h5 class="card-category">Total Nuevos Contagios Hoy España</h5>
+                            <h5 class="card-category">Total Nuevos Confirmados Ayer España</h5>
                             <h5 class="card-category fecha"></h5>
                             <h2 class="card-title" id="total_nuevos"><i class="tim-icons icon-bell-55 text-warning"></i></h2>
                         </div>
